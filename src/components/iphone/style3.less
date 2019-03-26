@@ -1,0 +1,119 @@
+@import '~style/helpers';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+
+//Styling for the container which is the base size for the iphone
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 414px;
+	margin: 0 auto;
+	height: 736px;
+	background-size: 100% 100%;
+	font-family: 'Roboto Mono', monospace;
+}
+//Styling for the header section of the iphone app
+.header {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	position: relative;
+}
+//Stylong used to create a gridlike div fo the tabs at the header of the app
+.gridcontainer {
+	//Creates grid container
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+//Styling for the content of the app which displays the weather info
+.content{
+	width: 414px;
+	height: 250px;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+//Styling for the music player section of the app
+.musicplayer{
+	text-align: center;
+	border: none;
+}
+
+//Second grid contaner styling
+//for the section which holds information for the windspeed and the chance of rain
+.gridcontainer1 {
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+//Styling for the divs inside the grid
+.griditem2 {
+  font-size: 30px;
+  text-align: center;
+	margin: auto;
+	display: block;
+}
+
+//From details to temprange al style individual text
+//Of the weather data
+.details {
+	flex: 4;
+	margin: 0;
+}
+
+.image{
+	height:auto;
+	width: auto;
+	margin: 0;
+}
+
+.city {
+	flex: 1;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+}
+
+.conditions {
+	flex: 1;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.temperature {
+	flex: 2;
+	font-size: 3.5em;
+	letter-spacing: -5px;
+	text-align: center;
+	margin: 0;
+	font-weight: lighter;
+}
+
+.wind_speed {
+	font-size:0.6em;
+	margin: 0;
+	letter-spacing: -1px;
+	color: white;
+}
+
+.temprange {
+	flex: 1;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+//Styling for the spotify player
+iframe{
+	opacity: 0.7;
+	border-radius: 2px;
+	width:400px;
+	height:350px;
+	frameborder:0;
+	allowtransparency:true;
+	allow:encrypted-media;
+	border: none;
+}
